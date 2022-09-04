@@ -9,7 +9,11 @@ const Home: NextPage = () => {
   if (error) return <p>{error.message}</p>
   if (!data) return <p>loading...</p>
 
-  return <div>{data.name}</div>
+  return (
+    <main>
+      <p>{data.name}</p>
+    </main>
+  )
 }
 
 export default Home
